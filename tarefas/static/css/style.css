@@ -20,6 +20,51 @@ body{
     font-size:1.5em !important;
     letter-spacing: 2px !important;
 }
+.add-div{
+    background-color: blue !important;
+    color: white !important;
+    padding: 0.5em !important;
+    border-radius: 5px;
+}
+
+#add-button{
+    text-decoration: none !important ;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/*main*/
+.list-div{
+    margin-left: 10% !important;
+    margin-right: 10% !important;
+}
+/*lista*/
+.item{
+    border-bottom: 1px dotted black !important;
+    height: 3em !important;
+    font-size: 2em !important;
+    margin-top: 1em !important;
+}
+
+.fa.fa-trash{
+    color: red !important;
+}
+.fa.fa-edit{
+    color:green !important;
+}
+.icones{
+    text-align: end !important;
+}
+
+.barra{
+    margin-top: 2em !important;
+}
+.input-group-btn{
+    border: 1px solid rgba(0, 0, 0, 0.206) !important;
+    border-radius: 5px !important;
+
+
+}
 footer{
     background-color: #333!important; 
     border-top: 2px solid black !important;
