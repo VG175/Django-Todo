@@ -44,7 +44,7 @@
     <main class="container-fluid">
       <div class="list-div">
         <h1>Lista de Tarefas</h1>
-        <!-- Primeira linha de escolhas -->
+        <!-- Botão +adicionar tarefas -->
         <div class="row barra">
           <div class="col-sm-2">
             <a id="add-button">
@@ -69,37 +69,19 @@
             </div>
           </div>
         </div>
+        {% for tarefa in tarefas %}
         <!-- primeira linha de  escolhas com a lixeira-->
         <div class="row item">
           <div class="col-sm-10">
-            <span>lavar as louças</span>
+            <span>{{tarefa.titulo}}</span>
           </div>
           <div class="col-sm-2 icones">
             <a href=""><span><i class="fa fa-edit"></i></span></a>
             <a href=""><span><i class="fa fa-trash"></i></span></a>
           </div>
         </div>
-        <!-- segunda linha com a lixeira -->
-        <div class="row item">
-          <div class="col-sm-10">
-            <span>lavar as louças</span>
-          </div>
-          <div class="col-sm-2 icones">
-            <a href=""><span><i class="fa fa-edit"></i></span></a>
-            <a href=""><span><i class="fa fa-trash"></i></span></a>
-          </div>
-        </div>
-        <!-- terceira linha com a lixeira -->
-        <div class="row item">
-          <div class="col-sm-10">
-            <span>lavar as louças</span>
-          </div>
-          <div class="col-sm-2 icones">
-            <a href=""><span><i class="fa fa-edit"></i></span></a>
-            <a href=""><span><i class="fa fa-trash"></i></span></a>
-          </div>
-        </div>
-        <!-- Final dos blocos -->
+        {% endfor %}
+        <!-- Fim do block -->
       </div>
     </main>
     <footer class="fixed-bottom">&copy;tec</footer>
