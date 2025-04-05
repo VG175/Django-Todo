@@ -12,4 +12,9 @@ document.querySelectorAll(".delete-btn").forEach(
             }
         });
     }
-)
+);
+
+// Função  para pequisar.
+document.getElementById("serch-bt").addEventListener("click",function(){
+    document.getElementById("search-form").onsubmit
+});
