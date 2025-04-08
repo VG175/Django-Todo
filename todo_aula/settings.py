@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'tarefas',
     'crispy_forms',
     'crispy_bootstrap5',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -129,3 +130,6 @@ CRISPY_TEMPLATE_PACK = "bootstrap5"
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# A pagina direcionada para login e logof com estes dois scripts.
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/accounts/login'
