@@ -33,9 +33,12 @@
 
                         {%if user.is_authenticated%}
                         <li class="nav-item">
-                            <form action="{% url 'logout%' %}" method="post"></form>
-                            {%csrf_token%}
-                            <button class="nav-link active" type="submit">Sair</button>
+                            <form action="{% url 'logout' %}" method="post">
+                                {%csrf_token%}
+                                <button class="nav-link active" type="submit">Sair</button>
+
+                            </form>
+                           
                         </li>
                         {%endif%}
                     </ul>
